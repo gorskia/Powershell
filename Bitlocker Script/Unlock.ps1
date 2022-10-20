@@ -1,0 +1,3 @@
+$PC = $env:computername; $File = "Filesystem::\\tsdcorpstor01.tsd.com\Bitlocker Encryption Keys\$PC.txt"; $Content = Get-Content -Path $File; manage-bde -Computername $PC -Unlock D: -RecoveryPassword $Content
+$PC = $env:computername; $File = "Filesystem::\\tsdcorpstor02.tsd.com\Bitlocker Encryption Keys\$PC.txt"; $Content = Get-Content -Path $File; manage-bde -Computername $PC -Unlock D: -RecoveryPassword $Content
+$PC = $env:computername; $File = "Filesystem::\\tsdcorpstor03.tsd.com\Bitlocker Encryption Keys\$PC.txt"; $Content = Get-Content -Path $File; manage-bde -Computername $PC -Unlock D: -RecoveryPassword $Content
